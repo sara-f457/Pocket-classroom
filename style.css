@@ -1,0 +1,116 @@
+/* Base styles for Pocket Classroom */
+body {
+  background: linear-gradient(to bottom, #480b76 0%, #39025b, black);
+  color: #e6eef8;
+  min-height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 980px;
+}
+
+.card {
+  background: linear-gradient(180deg, rgb(61, 59, 59), rgba(58, 26, 26, 0.03));
+  border: 2px solid white;
+}
+
+.capsule-card {
+  background: linear-gradient(180deg, rgb(61, 59, 59), rgba(58, 26, 26, 0.03));
+}
+
+.navbar-brand {
+  font-weight: 600;
+}
+
+button.active {
+  background-color: #480b76 !important;
+  color: #cecece !important;
+}
+
+.container-fluid {
+  margin-right: 10%;
+}
+
+.btn-style {
+  background-color: rgb(76, 7, 123);
+  color: #e6eef8;
+}
+
+.btn-style:hover {
+  background-color: rgb(0, 0, 0);
+  color: #e6eef8;
+  border-color: white;
+}
+#author-form {
+  background: linear-gradient(to bottom right, #2c1a3d, #1a0f2b);
+  border: 2px solid #e6eef8;
+}
+
+#author-form h3 {
+  border-bottom: 1px solid #e6eef8;
+  padding-bottom: 4px;
+}
+
+.form-label {
+  font-weight: 500;
+  color: #e6eef8;
+}
+
+.form-control,
+.form-select {
+  background-color: #2e2e2e;
+  color: #e6eef8;
+  border: 1px solid #aaa;
+}
+
+.form-control::placeholder {
+  color: #aaa;
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+input.form-control,
+textarea.form-control {
+  background-color: #2e2e2e;
+  color: #e6eef8;
+  border: 1px solid #aaa;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+  border-color: #e6eef8;
+  box-shadow: 0 0 0 0.5rem rgba(230, 238, 248, 0.25);
+}
+
+.flip-wrapper {
+  perspective: 1000px;
+
+  margin-bottom: 1rem;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flipped .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+}
